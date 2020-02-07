@@ -10,6 +10,7 @@ int main() {
 	int next; /* we'll use this space to store numbers "spoken" to us. */
 	int max;  /* this space will always hold the largest one *so far*. */
 	max = INT_MIN; /* INT_MIN is sort of like -infinity... */
+	cout << "Please enter numbers so I can determine which one is the maximum one.\n";
 	while (cin >> next) { /* listen until no more numbers spoken */
 		/* if new one is bigger, update max so that it is again the
 		 * largest number we've heard so far. */
@@ -17,7 +18,7 @@ int main() {
 			max = next;
 		}
 	}
-	cout << max << "\n";
+	cout << "The largest number was "<< max << "\n";
 }
 
 /* TODO: read l1.pdf and the first 2 lectures from Prof Li. */
