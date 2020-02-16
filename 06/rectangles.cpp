@@ -10,3 +10,36 @@
 /* NOTE: place spaces between the characters to compensate for the fact that
  * most terminal fonts are taller than they are wide.
  * */
+#include<iostream>
+using namespace std;
+
+int main() {
+
+  int row, column;
+  cout << "Please enter the amount of rows: \n";
+  cin >> row;
+
+  cout << "Please enter the amount of columns: \n";
+  cin >> column;
+
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < column; j++) {
+     //Print a full row for the first and last row
+     if (i == 0 || i == row - 1) {
+      cout << "* ";
+     }
+     //Print a hollow row for the rest
+     else {
+      if (j == 0 || j == column - 1) {
+       cout << "* ";
+      }
+      else {
+       cout << "  ";
+      }
+     }
+    }
+    cout << "\n";
+  }
+
+  return 0;
+}
