@@ -25,6 +25,7 @@ int main()
 
 /* TODO: write a function that takes a vector and searches for
  * a particular value x, returning true if and only if x is found. */
+
 /* TODO: write a function that takes a vector V of integers which
  * is *sorted*, and produces a vector of the unique integers from V.
  * E.g., if V = {1,2,2,3,3,3,4}, then the result should
@@ -34,6 +35,7 @@ int main()
  * the
  * result.
  * */
+
 /* TODO: write a *binary search* on a sorted vector.  The idea is to
  * kind of emulate the process you use to find a particular page in a book:
  * 1. open the book to some page in the middle.
@@ -43,6 +45,7 @@ int main()
  *
  * This might be a little challenging.  Ask questions if you get stuck.
  * */
+
 /* TODO: write a function that takes a vector and places the elements
  * in sorted order.  Warning: this could be kind of challenging.  There is
  * a solution in l3.pdf, but you should try to come up with something on

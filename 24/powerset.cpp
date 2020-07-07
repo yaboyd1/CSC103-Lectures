@@ -38,6 +38,7 @@ set<set<int>> powerset(set<int> S)
 		return P; /* NOTE: {} =/= {{}} !!! */
 		/* NOTE: we could have also just used S for empty... */
 	}
+
 	/* now make S' which is smaller than S by removing an element. */
 	set<int> SBar(S); /* start with a copy of S */
 	/* NOTE: we KNOW SBar =/= {}, so it has at least one element. */
@@ -66,7 +67,7 @@ int main()
 	set<int> S = {1,2,3};
 	set<set<int>> P = powerset(S);
 	for (set<set<int>>::iterator i = P.begin(); i != P.end(); i++) {
-		printf("{");
+		printf("{ ");
 		for (set<int>::iterator j = i->begin(); j != i->end(); j++) {
 			printf("%i ",*j);
 		}

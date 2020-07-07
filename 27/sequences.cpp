@@ -2,6 +2,7 @@
 using std::string;
 #include <vector>
 using std::vector;
+
 /* exercise: write a (probably recursive) function that returns
  * all sequences of length n using characters from a given
  * string.  E.g., if s="abc" and n=2, then the output would

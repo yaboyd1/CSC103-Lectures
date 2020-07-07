@@ -27,6 +27,18 @@ vector<int> evens(vector<int> V)
 
 int main()
 {
-	/* TODO: write some test code for the above. */
+
+	vector<int> test;
+
+	for (int i = 0; i < 11; i++) {
+		test.push_back(i);
+	}
+
+	test = evens(test);
+
+	for (size_t i = 0; i < test.size(); i++) {
+		cout << test[i] << " ";
+	}
+
 	return 0;
 }

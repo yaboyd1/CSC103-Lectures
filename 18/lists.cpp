@@ -17,7 +17,7 @@ void reverse(node*& L)
 	node* r = L->next; /* second node (might be null) */
 	while (r) {
 		p->next = q; /* step 1 */
-		q = p;       /* step 2 */       
+		q = p;       /* step 2 */
 		p = r;       /* step 3 */
 		r = r->next; /* step 4 */
 	}
@@ -61,5 +61,12 @@ int main(void)
  * return a pointer to the start of the new list.  Here's a prototype: */
 node* copy(node* L)
 {
-	return NULL; /* just so it compiles... */
+	node* C = new node();
+	node* start = C;
+	for (node* i = L; i->next != NULL; i = i->next) {
+		C->data = i->data;
+		C->next = new node();
+		C = C->next;
+	}
+	return start; /* just so it compiles... */
 }

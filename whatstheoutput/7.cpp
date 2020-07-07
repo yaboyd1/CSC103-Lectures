@@ -17,13 +17,25 @@ int main(void)
 	 * address twice, or two different ones).
 	 * */
 	cout << "p  == " << p << "\n&x == " << &x << "\n";
+	//Prints same address
 	cout << "q  == " << q << "\n&y == " << &y << "\n";
+	//Prints same address/different from first
 	cout << "x  == " << x << "\n*p == " << *p << "\n";
+	//Prints same x value of 23
 	cout << "y  == " << y << "\n*q == " << *q << "\n";
+	//Prints same y value of 99
+
+	//P now points to y
 	p = q;
+
 	cout << "p  == " << p << "\n&x == " << &x << "\n";
+	//Address of y, address of x
 	cout << "q  == " << q << "\n&y == " << &y << "\n";
+	//Same address
 	cout << "x  == " << x << "\n*p == " << *p << "\n";
+	//X value, Y value
 	cout << "y  == " << y << "\n*q == " << *q << "\n";
+	//Same Y value
+
 	return 0;
 }

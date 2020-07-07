@@ -10,5 +10,17 @@ using std::cout;
 
 int main()
 {
-	return 0;
+
+ set<int> S;
+
+ int x;
+ while (cin >> x) {
+  S.insert(x);
+ }
+
+ for(set<int>::iterator i = S.begin(); i != S.end(); i++) {
+  printf("%i ", *i);
+ }
+
+ return 0;
 }

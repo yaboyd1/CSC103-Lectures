@@ -39,6 +39,17 @@ int max(int x, int y, int z)
 int main()
 {
 	/* TODO: write some test code for each of the above functions. */
+
+	int x, y, z;
+
+	cout << "Please choose a value for x, y and z: \n";
+	cin >> x >> y >> z;
+
+	cout << "The maximum of these values is " << max(x,y,z) << ".\n";
+	cout << "The maximum of the first two values is " << max(x,y) << ".\n";
+	swap(y,z);
+	cout << "The second value is " << z << ".\n";
+
 	return 0;
 }
 

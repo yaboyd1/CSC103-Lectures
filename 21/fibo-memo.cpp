@@ -3,9 +3,14 @@ using std::cin;
 #include <cstdio> /* for printf */
 #include <map>
 using std::map;
+#include <cstdio>
+using std::printf;
 
 /* let's use maps to make a more efficient fibonacci function
  * (that's still recursive...) */
+
+void increment();
+void staticIncrement();
 
 size_t fib(int n)
 {
@@ -26,9 +31,20 @@ size_t fib(int n)
 
 int main()
 {
+	/*
 	int n;
 	while (cin >> n)
 		printf("fib(%i)\t= %lu\n",n,fib(n));
+	*/
+
+	printf("Without static: \n");
+	size_t n = 5;
+	for (size_t i = 0; i < n; i++)
+		increment();
+	printf("With static: \n");
+	for (size_t i = 0; i < n; i++)
+		staticIncrement();
+
 	return 0;
 }
 
@@ -38,3 +54,13 @@ int main()
  * what the static keyword does.  E.g., make a function with
  * static and non-static variables, call them a few times, and
  * see what happens when you examine their values.  */
+
+void staticIncrement() {
+	static int UwU = 0;
+	printf("%i\n", UwU++);
+}
+
+void increment() {
+	int UwU = 0;
+	printf("%i\n", UwU++);
+}

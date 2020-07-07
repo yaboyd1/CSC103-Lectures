@@ -3,6 +3,10 @@ using std::cin;
 using std::cout;
 #include <vector>
 using std::vector;
+#include <cstdio>
+using std::printf;
+
+void printVertically(size_t n);
 
 /* TODO: try to re-write this whole thing from scratch.
  * Also, maybe give it a try with vectors instead of arrays. */
@@ -61,17 +65,26 @@ void mergeSort(int* A, size_t n)
 
 int main()
 {
+
+	/*
 	int x;
 	vector<int> A;
 	while (cin >> x) {
 		A.push_back(x);
 	}
 	/* TODO: try to understand how we ran off with A's array: */
+
+	/*
 	mergeSort(&A[0],A.size());
 	for (size_t i = 0; i < A.size(); i++) {
 		cout << A[i] << " ";
 	}
 	cout << "\n";
+	*/
+
+	printVertically(2358);
+
+
 	return 0;
 }
 
@@ -89,3 +102,12 @@ int main()
  * 8
  * Rules: you can't use any loops.  You can't use vectors or arrays.
  * Just let the recursive function calls do the work for you.  */
+
+void printVertically(size_t n) {
+	if (n < 10) {
+		printf("%i\n", n);
+		return;
+	}
+	printVertically(n / 10);
+	printf("%i\n",n % 10);
+}

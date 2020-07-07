@@ -8,10 +8,17 @@ using std::cout;
 int main()
 {
 	int i;
+
+	//Iterate from 0 to 14
 	for (i=0; i<15; i++) {
+		//Print if a value is even and divisible by 3
 		if (i % 2 == 0 && i % 3 == 0)
 			cout << "i == " << i << "\n";
 	}
+
+	//Last known value of i
 	cout << "i == " << i << "\n";
 	return 0;
 }
+
+
