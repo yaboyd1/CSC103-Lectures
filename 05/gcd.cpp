@@ -41,15 +41,19 @@ int main()
 }
 
 /* TODO: write a loop that prints the sum of the first n odd cubes. */
+
 /* TODO: write a brute force test for perfect cubes.  Check if
  * n = k^3 for some integer k.  */
+
 /* TODO: sum the squares of all integers from 1..100.
  * I.e., compute 1+4+9+...+10000 */
+
 /* TODO: a slight generalization of an earlier exercise: for integers
  * n and k, determine the largest power of k that divides n.
  * NOTE: see if you can formalize the invariant you used to solve this.
  * (See l2.pdf regarding invariants.)
  * */
+
 /* TODO: write a program that reads (arbitrarily many) integers from
  * stdin and outputs the *second* smallest one.  NOTE: you don't need
  * to store many numbers (all at once, that is) to do this!  You'll
